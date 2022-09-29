@@ -10,16 +10,16 @@ $APPLICATION->SetTitle("Контакты");
                 <div class="col-xl-8">
                     <div class="contact-style1_form">
                         <div class="sec-title">
-                            <div class="sub-title martop0">
-                                <div class="inner">
-                                    <h3>Support LoveIcon With Heart!</h3>
-                                </div>
-                            </div>
-                            <h2>Get In Touch With Us</h2>
-                            <p>Laboris nisi aliquip sed duis aute lorem ipsum dolor amet consectetur adipisicing
-                                sed eiusmod tempor tm incididunts lorem ipsum sed labore dolore magnad aliqua.
-                                Lorem ipsum dolor sit amet consectetur adipisicing.
-                            </p>
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "inc",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/local/include/form_text.php"
+                                )
+                            );?>
                         </div>
                         <div class="contact-form">
                             <form id="contact-form" name="contact_form" class="default-form2"

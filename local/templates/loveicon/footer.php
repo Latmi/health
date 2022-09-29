@@ -11,25 +11,7 @@
                 <div class="copyright-text">
                     <p>&copy; 2022 <a href="index.html#">LoveIcon</a> Charity Theme. All rights reserved.</p>
                 </div>
-                <div class="footer-social-link">
-                    <ul class="social-links-style1">
-                        <li>
-                            <a href="index.html#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="index.html#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="index.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="index.html#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="index.html#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
+
 
             </div>
         </div>

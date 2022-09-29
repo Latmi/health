@@ -82,11 +82,15 @@ global $APPLICATION
 
 
 
-    <link href="<?=SITE_TEMPLATE_PATH?>/assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
+<!--    <link href="--><?//=SITE_TEMPLATE_PATH?><!--/assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">-->
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
 
@@ -133,27 +137,30 @@ global $APPLICATION
                             <div class="logo">
                                 <a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/assets/images/resources/logo-white.svg" alt="" /></a>
                             </div>
-                            <div class="content-box">
-                                <h4>About Us</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
-                                    labore et magna aliqua. Ut enim ad minim veniam laboris.</p>
-                            </div>
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "inc",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/local/include/form_side_text.php"
+                                )
+                            );?>
                             <div class="form-inner">
-                                <h4>Get a free quote</h4>
-                                <form action="index.html" method="post">
+                                <form action="/sendmail.php" method="post">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="Имя" required="">
+                                        <input type="text" name="form_name" placeholder="Имя" required="">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email" required="">
+                                        <input type="email" name="form_email" placeholder="Email" required="">
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="message" placeholder="Сообщение..."></textarea>
+                                        <textarea name="form_message" placeholder="Сообщение..."></textarea>
                                     </div>
                                     <div class="form-group message-btn">
                                         <button type="submit" class="btn-one btn-one-style2">
-                                                <span class="txt"><i class="arrow1 fa fa-check-circle"></i>Submit
-                                                    Now</span>
+                                            <span class="txt"><i class="arrow1 fa fa-check-circle"></i>Отправить</span>
                                         </button>
                                     </div>
                                 </form>
