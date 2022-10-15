@@ -1,10 +1,8 @@
 <div class="sub-title martop0">
     <div class="inner">
-        <h3>Support LoveIcon With Heart!</h3>
+        <h3>Получи ответ эксперта</h3>
     </div>
 </div>
-<h2>Get In Touch With Us</h2>
-<p>Laboris nisi aliquip sed duis aute lorem ipsum dolor amet consectetur adipisicing
-    sed eiusmod tempor tm incididunts lorem ipsum sed labore dolore magnad aliqua.
-    Lorem ipsum dolor sit amet consectetur adipisicing.
+<h2>Есть вопрос? Задай!</h2>
+<p>Дорогие родители и дети, перед вами форма обратной связи. Если вы не нашли ответа на свой вопрос в уже размещенных текстах и видео, вы можете заполнить эту форму, а мы передадим ваш вопрос эксперту, получим ответ и разместим его на сайте.
 </p>

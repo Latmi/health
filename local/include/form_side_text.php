@@ -1,5 +1,4 @@
 <div class="content-box">
-    <h4>About Us</h4>
-    <p>Lorem2 ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
-        labore et magna aliqua. Ut enim ad minim veniam laboris.</p>
+    <h4>Задайте вопрос</h4>
+    <p>Дорогие родители и дети, перед вами форма обратной связи. Если вы не нашли ответа на свой вопрос в уже размещенных текстах и видео, вы можете заполнить эту форму, а мы передадим ваш вопрос эксперту, получим ответ и разместим его на сайте.</p>
 </div>

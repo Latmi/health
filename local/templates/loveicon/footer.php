@@ -9,7 +9,7 @@
         <div class="auto-container">
             <div class="footer-bottom_content_box text-center">
                 <div class="copyright-text">
-                    <p>&copy; 2022 <a href="index.html#">LoveIcon</a> Charity Theme. All rights reserved.</p>
+                    <p>&copy; 2022 Онлайн-проект «На здоровье!»</p>
                 </div>
 
 
