@@ -7,8 +7,8 @@ function dateToNumberMonth($strDate) {
 }
 
 foreach ($arResult['ITEMS'] as &$item) {
-    if ($item['DATE_CREATE']) {
-       $item['DISPLAY_DATE'] = dateToNumberMonth($item['DATE_CREATE']);
+    if ($item['DATE_ACTIVE_FROM']) {
+       $item['DISPLAY_DATE'] = dateToNumberMonth($item['DATE_ACTIVE_FROM']);
     }
 
 }

@@ -7,7 +7,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
  */
 
 
-$arSelect = ['ID', 'NAME', 'DATE_ACTIVE_FROM', 'PREVIEW_TEXT', 'PROPERTY_ATT_SHOW_ON_MAIN'];
+$arSelect = ['ID', 'NAME', 'DATE_ACTIVE_FROM', 'PREVIEW_TEXT', 'PROPERTY_ATT_SHOW_ON_MAIN', 'PROPERTY_ATT_VIDEO_ANSWER'];
 $arFilter = ['IBLOCK_ID' => 3, 'SECTION_CODE' => $arParams['SECTION_CODE'], 'ACTIVE_DATE' => 'Y', 'ACTIVE' => 'Y'];
 
 if ($arParams['ON_MAIN']) {

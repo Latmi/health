@@ -10,4 +10,11 @@ while($arFields = $rs->GetNext())
 
 }
 
+$arSelectAsks = ['ID', 'NAME', 'DATE_ACTIVE_FROM', 'PROPERTY_ATT_VIDEO_ANSWER', 'PREVIEW_PICTURE', 'PREVIEW_TEXT'];
+$arFilterAsks = ['IBLOCK_ID' => 3, 'ACTIVE_DATE' => 'Y', 'ACTIVE' => 'Y', 'PROPERTY_ATT_EXPERT' => $arResult['ID']];
+$rsAsks = CIBlockElement::GetList(['sort' => 'asc'], $arFilterAsks, false, false, $arSelectAsks);
+while($arFieldsAsks = $rsAsks->GetNext())
+{
+    $arResult['ANSWERS'][] = $arFieldsAsks;
 
+}
