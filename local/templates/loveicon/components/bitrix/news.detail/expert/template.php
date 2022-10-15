@@ -78,6 +78,8 @@ $this->setFrameMode(true);
     </div>
 </section>
 <!--End Features Style1 Area-->
+<?endif;?>
+<? if ($arResult['ANSWERS']): ?>
 
     <!--Start Faq Style1 Area-->
     <section class="cause-style3-area">
@@ -117,7 +119,6 @@ $this->setFrameMode(true);
         </div>
     </section>
     <!--End Faq Style1 Area-->
-
 <?endif;?>
 
 

@@ -30,8 +30,8 @@ $this->setFrameMode(true);
                                 </div>
                             </div>
                             <div class="date-box ">
-                                <h2><?=$arItem['DISPLAY_DATE']?></h2>
-                                <p>Сен</p>
+                                <h2><?=$arItem['DISPLAY_DATE'][0]?></h2>
+                                <p><?=$arItem['DISPLAY_DATE'][1]?></p>
                             </div>
                         </div>
                         <div class="text-holder">

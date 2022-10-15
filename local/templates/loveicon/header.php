@@ -147,7 +147,7 @@ global $APPLICATION
                                 )
                             );?>
                             <div class="form-inner">
-                                <form action="/sendmail.php" method="post">
+                                <form id="modal-contact-form" name="modal-contact_form" action="/sendmail.php" method="post">
                                     <div class="form-group">
                                         <input type="text" name="form_name" placeholder="Имя" required="">
                                     </div>
@@ -158,8 +158,9 @@ global $APPLICATION
                                         <textarea name="form_message" placeholder="Сообщение..."></textarea>
                                     </div>
                                     <div class="form-group message-btn">
-                                        <button type="submit" class="btn-one btn-one-style2">
-                                            <span class="txt"><i class="arrow1 fa fa-check-circle"></i>Отправить</span>
+                                        <button class="btn-one2" type="submit"
+                                                data-loading-text="Отправка...">
+                                            <span class="txt"><i class="arrow1 fa fa-check-circle"></i> Отправить</span>
                                         </button>
                                     </div>
                                 </form>
